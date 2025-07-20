@@ -1,0 +1,22 @@
+{
+  "name": "Тайны Звёзд",
+  "short_name": "Астрология",
+  "description": "Астрологический портал с гороскопами и совместимостью",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1423",
+  "theme_color": "#6a4c93",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
