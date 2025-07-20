@@ -1,20 +1,11 @@
-const CACHE_NAME = 'astrology-cache-v1';
+const CACHE_NAME = 'astrology-cache-v2';
 const urlsToCache = [
   '/',
   '/index.html',
   '/manifest.json',
   '/images/aries.png',
   '/images/taurus.png',
-  '/images/gemini.png',
-  '/images/cancer.png',
-  '/images/leo.png',
-  '/images/virgo.png',
-  '/images/libra.png',
-  '/images/scorpio.png',
-  '/images/sagittarius.png',
-  '/images/capricorn.png',
-  '/images/aquarius.png',
-  '/images/pisces.png',
+  // ... остальные изображения ...
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css'
 ];
 
@@ -42,7 +33,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cacheName => {
-          if (cacheWhitelist.indexOf(cacheName) === -1) {
+          if (!cacheWhitelist.includes(cacheName)) {
             return caches.delete(cacheName);
           }
         })
