@@ -2,7 +2,7 @@
   "name": "Тайны Звёзд",
   "short_name": "Астрология",
   "description": "Астрологический портал с гороскопами и совместимостью",
-  "start_url": "/",
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#1a1423",
   "theme_color": "#6a4c93",
